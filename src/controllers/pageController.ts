@@ -30,21 +30,25 @@ export const dogs = (req: Request, res: Response) => {
 }
 
 export const cats = (req: Request, res: Response) => {
+    let list = Pet.getFromType('cat');
     res.render('pages/page', {
         menu: createMenuObject('cat'),
         banner: {
             title: 'Gatos',
             background: 'banner_cat.jpg'
-        }
+        },
+        list
     });
 }
 
 export const fishes = (req: Request, res: Response) => {
+    let list = Pet.getFromType('fish');
     res.render('pages/page', {
         menu: createMenuObject('fish'),
         banner: {
             title: 'Peixes',
             background: 'banner_fish.jpg'
-        }
+        },
+        list
     });
 }
