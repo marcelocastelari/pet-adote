@@ -9,7 +9,7 @@ Projeto de portal de adoção para Pets.
 <ul>
 
 ### Pré-requisitos globais:
-`yarn global add nodemon typescriot ts-node`
+`yarn global add nodemon typescript ts-node`
 
 ### Instalação
 `yarn install`
